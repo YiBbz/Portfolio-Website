@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Light mode - Jordy blue and light tones */
+    --background: 210 40% 98%;
+    --foreground: 0 0% 0%;
+
+    --card: 210 40% 98%;
+    --card-foreground: 0 0% 0%;
+
+    --popover: 210 40% 98%;
+    --popover-foreground: 0 0% 0%;
+
+    --primary: 214 100% 70%; /* Jordy blue */
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 250 20% 85%;
+    --secondary-foreground: 0 0% 0%;
+
+    --muted: 250 20% 90%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 214 100% 70%; /* Jordy blue */
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214 100% 85%;
+    --input: 214 100% 85%;
+    --ring: 214 100% 70%;
+
+    --radius: 0.75rem;
+
+    /* Portfolio specific colors */
+    --hero-gradient: linear-gradient(135deg, hsl(214 100% 70%), hsl(250 50% 60%));
+    --dark-purple: 250 50% 20%;
+    --jordy-blue: 214 100% 70%;
+    --text-glow: 0 0 20px hsl(214 100% 70% / 0.5);
+  }
+
+  .dark {
+    /* Dark mode - Black, dark purple, Jordy blue */
+    --background: 0 0% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 250 50% 12%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 250 50% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 214 100% 70%; /* Jordy blue */
+    --primary-foreground: 0 0% 8%;
+
+    --secondary: 250 50% 20%; /* Dark purple */
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 250 50% 15%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 214 100% 70%; /* Jordy blue */
+    --accent-foreground: 0 0% 8%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 250 50% 20%;
+    --input: 250 50% 20%;
+    --ring: 214 100% 70%;
+
+    /* Portfolio specific colors */
+    --hero-gradient: linear-gradient(135deg, hsl(0 0% 8%), hsl(250 50% 15%), hsl(214 100% 70% / 0.1));
+    --dark-purple: 250 50% 20%;
+    --jordy-blue: 214 100% 70%;
+    --text-glow: 0 0 20px hsl(214 100% 70% / 0.8);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

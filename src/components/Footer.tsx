@@ -25,7 +25,7 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="text-xl font-bold text-primary">Tshepiso Rammala</h3>
             <p className="text-muted-foreground">
-              Software Developer & Data Science Enthusiast
+              Software Developer 
             </p>
             <p className="text-sm text-muted-foreground">
               Passionate about creating innovative solutions through code, 
@@ -54,9 +54,9 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-foreground">Get In Touch</h4>
             <div className="space-y-2 text-muted-foreground">
-              <p>tshepiso.rammala@example.com</p>
-              <p>+27 123 456 789</p>
-              <p>Johannesburg, South Africa</p>
+              <p>tshepisojr@protonmail.com</p>
+              <p>+27 067 769 7458</p>
+              <p>Kempton Park, South Africa</p>
             </div>
           </div>
         </div>

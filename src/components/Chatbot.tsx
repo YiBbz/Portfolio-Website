@@ -17,7 +17,7 @@ const botResponses: { [key: string]: string } = {
   "experience": "Tshepiso has over 3 years of experience in software development, with expertise in full-stack development, data analytics, and cloud infrastructure.",
   "education": "Tshepiso has a strong background in computer science and data science, with continuous learning in emerging technologies like AI and cloud computing.",
   "projects": "You can view Tshepiso's featured projects in the Projects section above, including AI analytics dashboards, cloud-native platforms, and game development work.",
-  "contact": "You can reach Tshepiso through the contact form above, via email at tshepiso.rammala@example.com, or connect on LinkedIn and GitHub.",
+  "contact": "You can reach Tshepiso through the contact form above, via email at tshepisojr@protonmail.com, or connect on LinkedIn and GitHub.",
   "default": "I'm here to help you learn more about Tshepiso! You can ask me about his skills, experience, projects, or how to get in touch with him."
 };
 

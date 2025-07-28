@@ -1,51 +1,76 @@
-import { Card, CardContent } from "@/components/ui/card";
+import { Code, Server, Database, Cpu } from 'lucide-react';
+import { Card, CardContent } from '@/components/ui/card';
 
-export function About() {
+const About = () => {
+  const highlights = [
+    {
+      icon: Code,
+      title: "Full-Stack Development",
+      description: "Building end-to-end applications with modern technologies"
+    },
+    {
+      icon: Server,
+      title: "Network Security",
+      description: "Creating secure and scalable network infrastructure "
+    },
+    {
+      icon: Database,
+      title: "Database Design",
+      description: "Crafting efficient and scalable database architectures"
+    },
+    {
+      icon: Cpu,
+      title: "Performance Optimization",
+      description: "Writing efficient code and optimizing system performance"
+    }
+  ];
+
   return (
-    <section id="about" className="py-20 px-4">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">
-          About Me
-        </h2>
-        
+    <section id="about" className="py-20 bg-muted/30">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
+            About Me
+          </h2>
+          <div className="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+        </div>
+
         <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Text Content */}
           <div className="space-y-6">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm a passionate software developer with a deep love for data science and cloud technologies. 
-              My journey in tech started with curiosity about how things work, and has evolved into a 
-              career focused on building scalable, innovative solutions.
+              I'm a young and enthusiastic software developer with a love for optimal code and secure systems.
+              My journey began with a thirst for knowledge about the inner workings of computers, 
+              which led me to develop a deep interest in network infrastructure and database technologies.
             </p>
             
             <p className="text-lg text-muted-foreground leading-relaxed">
-              When I'm not coding, you'll find me exploring new machine learning algorithms, 
-              experimenting with cloud architectures, or contributing to open-source projects. 
-              I believe in the power of technology to solve real-world problems and make a positive impact.
+              I enjoy problem solving, coding ,and optimizing database performance, exploring network protocols, 
+              or spending time honing my craft in building robust, scalable systems.
+              I believe in writing code that not only works but is maintainable, scalable, and efficient
             </p>
+
             
-            <div className="grid grid-cols-2 gap-4 mt-8">
-              <Card className="bg-card/50 border-primary/20">
-                <CardContent className="p-4 text-center">
-                  <div className="text-2xl font-bold text-primary">3+</div>
-                  <div className="text-sm text-muted-foreground">Years Experience</div>
-                </CardContent>
-              </Card>
-              
-              <Card className="bg-card/50 border-primary/20">
-                <CardContent className="p-4 text-center">
-                  <div className="text-2xl font-bold text-primary">50+</div>
-                  <div className="text-sm text-muted-foreground">Projects Completed</div>
-                </CardContent>
-              </Card>
-            </div>
           </div>
-          
-          <div className="relative">
-            <div className="w-full h-96 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg flex items-center justify-center">
-              <div className="text-6xl text-primary/50">👨‍💻</div>
-            </div>
+
+          {/* Highlights Grid */}
+          <div className="grid grid-cols-2 gap-4">
+            {highlights.map((item, index) => (
+              <Card key={index} className="bg-gradient-card border border-border hover:shadow-elevated transition-all duration-300 group">
+                <CardContent className="p-6 text-center">
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-lg mb-4 group-hover:bg-primary/20 transition-colors">
+                    <item.icon className="h-6 w-6 text-primary" />
+                  </div>
+                  <h4 className="font-semibold mb-2 text-card-foreground">{item.title}</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default About;

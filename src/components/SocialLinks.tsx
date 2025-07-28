@@ -4,17 +4,17 @@ import { Button } from "@/components/ui/button";
 const socialLinks = [
   {
     name: "GitHub",
-    url: "https://github.com/tshepiso-rammala",
+    url: "https://github.com/YiBbz",
     icon: Github,
   },
   {
     name: "LinkedIn",
-    url: "https://linkedin.com/in/tshepiso-rammala",
+    url: "www.linkedin.com/in/tshepiso-rammala-6349672b4",
     icon: Linkedin,
   },
   {
     name: "Instagram",
-    url: "https://instagram.com/tshepiso.rammala",
+    url: "https://www.instagram.com/this.is.ramz/",
     icon: Instagram,
   },
 ];

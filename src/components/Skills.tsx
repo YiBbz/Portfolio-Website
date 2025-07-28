@@ -24,25 +24,15 @@ const skillCategories = {
     { name: "MySQL", level: 80 },
     { name: "Supabase", level: 85 },
   ],
-  "AI & Data Science": [
-    { name: "Machine Learning", level: 85 },
-    { name: "TensorFlow", level: 80 },
-    { name: "PyTorch", level: 75 },
-    { name: "Pandas", level: 90 },
-    { name: "Scikit-learn", level: 85 },
+  "Networks": [
+    { name: "Cisco Packet Tracer", level: 75 },
+    { name: "GNS3", level: 80 },
+    { name: "CCTV Installation", level: 75 },
+    { name: "Wireless Networking", level: 90 },
+    { name: "Operating Systems", level: 85 },
   ],
-  "Game Development": [
-    { name: "Unity", level: 70 },
-    { name: "C#", level: 75 },
-    { name: "Game Design", level: 65 },
-    { name: "3D Modeling", level: 60 },
-  ],
-  "Linux": [
-    { name: "Ubuntu", level: 85 },
-    { name: "Shell Scripting", level: 80 },
-    { name: "Docker", level: 85 },
-    { name: "System Administration", level: 75 },
-  ],
+
+
 };
 
 export function Skills() {

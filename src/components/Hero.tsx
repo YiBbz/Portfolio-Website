@@ -57,7 +57,7 @@ export function Hero() {
   const handleDownloadCV = () => {
     // In a real implementation, you would link to your actual CV file
     const link = document.createElement('a');
-    link.href = '/path-to-your-cv.pdf'; // Replace with actual CV path
+    link.href = '/CV/TshepisoRammalaCV.pdf'; // Replace with actual CV path
     link.download = 'Tshepiso_Rammala_CV.pdf';
     link.click();
   };
@@ -66,8 +66,7 @@ export function Hero() {
     <section className="min-h-screen flex flex-col justify-center items-center relative bg-hero-gradient px-4">
       <div className="text-center animate-fadeIn">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
-          <span className="text-foreground">Hi, my name is </span>
-          <span className="text-primary animate-glow">Tshepiso Rammala!</span>
+          <span className="text-primary animate-glow">Tshepiso Rammala</span>
         </h1>
         
         <div className="text-2xl md:text-4xl lg:text-5xl font-semibold mb-8 h-16 flex items-center justify-center">
@@ -79,8 +78,11 @@ export function Hero() {
         </div>
 
         <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-          Passionate about creating innovative solutions through code, data science, and cloud technologies. 
-          I love turning complex problems into elegant, scalable applications.
+          Computer Science student with a strong foundation in programming (Python, Java, C++), data
+          structures & algorithms, and software development methodologies. Hands-on experience in web/mobile
+          apps, databases, AI/ML. Skilled in collaborative teamwork, agile practices, and debugging complex systems.
+          Eager to apply academic knowledge to real-world challenges in a dynamic tech role.
+
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">

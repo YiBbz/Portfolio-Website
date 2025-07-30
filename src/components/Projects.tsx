@@ -22,9 +22,9 @@ const projects = [
   },
   {
     title: "C# Data Structures and Algorithms",
-    description: "Collection of 2D and 3D games built with Unity, featuring physics-based gameplay, AI opponents, and multiplayer functionality.",
-    technologies: ["Unity", "C#", "Blender", "Photon Network"],
-    github: "https://github.com/tshepiso-rammala/game-portfolio",
+    description: "Shows my understanding of C# data Structures and algorithms such as Kruskal’s algorithm and Prim's algorithm",
+    technologies: ["C#", "Kruskal's Algorithm", "Prim's Algorithm"],
+    github: "https://github.com/YiBbz/C-Data-Structures-and-Algorithms",
     //demo: "https://game-portfolio-demo.itch.io",
     image: "🧩"
   },

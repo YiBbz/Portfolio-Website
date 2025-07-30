@@ -57,7 +57,7 @@ export function Hero() {
   const handleDownloadCV = () => {
     // In a real implementation, you would link to your actual CV file
     const link = document.createElement('a');
-    link.href = 'public/CV/Tshepiso_Ramamala_CV.pdf'; // Replace with actual CV path
+    link.href = '/CV/Tshepiso_Ramamala_CV.pdf'; // Replace with actual CV path
     link.download = 'Tshepiso_Rammala_CV.pdf';
     link.click();
   };
